@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+/*ce code est pour style l entete  */
+* {
+  box-sizing: border-box;    
+}
+
+body {
+
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0; 
+    
+}
+
+.Entete {
+    display: grid;
+    height: 100px;
+    grid-template-columns: auto 1fr auto auto ;
+    align-items: center;
+    
+    
+}
+
+.menu-principal {
+    height:100% ;       
+}
+
+.heberg {
+    border-top:3px solid #0065FC;
+}
+
+
+
+.Entete img {
+    margin-left:2rem;
+    
+    
+    
+}
+
+.inscrire{
+   padding: 1rem;
+}
+.menu-principal ul{
+  list-style: none;
+  display: flex;
+  height:100% ;
+ 
+  justify-content: flex-end; 
+  
+  margin: 0;
+   
+}
+
+.menu-principal a {
+    
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.menu-principal li{
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    
+        
+ 
+    
+}
+
+
+.heberg a {
+    color:#0065FC ;
+    
+    
+}
+
+.activ a {
+   color: black; 
+}
+
+.inscrire a  {
+    font-weight: 500; 
+    color:#0065FC;
+    margin-right: 2rem;
+    text-decoration: none;
+    
+    
+}
+
+
+/* cette partie du code est pour styler pour les petits ecran */
+
+@media screen and (max-width: 700PX){
+    
+
+
+
+.Entete {
+    
+    grid-template-columns: auto 1fr auto ;
+    height: 100px;
+    grid-template-areas: "logo . inscrire"
+                         "heberg-activ heberg-activ heberg-activ";
+}
+
+
+.menu-principal {
+    width:100%;
+    height:100% ;
+    grid-area: heberg-activ;
+    
+
+
+}
+
+.heberg {
+    border-top:3px solid #0065FC;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+
+
+
+
+.menu-principal ul{
+  
+  display:flex;
+  list-style: none;
+  
+  height:100% ;
+  width: 100%;
+  justify-content:space-between;
+  margin-left: 0;
+  padding-left: 0;
+
+ 
+
+ 
+  
+  margin: 0;
+  
+}
+.image-header{
+    grid-area: logo;
+    
+}
+.inscrire{
+    grid-area: inscrire;
+}
+
+
+
+.menu-principal a {
+    
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.menu-principal li{
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    
+    
+    width: 50%;
+ 
+
+    
+        
+ 
+    
+}
+
+
+.heberg a {
+    color:#0065FC ;
+    
+    
+}
+
+.activ a {
+   color: black; 
+}
+
+.inscrire a  {
+    font-weight: 500; 
+    color:#0065FC;
+    margin-right: 2rem;
+    text-decoration: none;
+    
+    
+}
+.heberg{
+    
+    border-bottom:3px solid #0065FC;
+    border-top:white;
+}
+.activ {
+   
+    border-bottom:3px solid #F2F2F2;
+}
+
+}
+/* cette partie est pour styler le footer */
+
+
+footer {
+    display: flex ;
+    background-color:#F2F2F2 ;
+    margin-top: 200px;
+    
+   
+   
+    height: 200px;
+   
+    max-width: 100%;
+    padding:0 2rem  ;
+
+
+}
+div h3 {
+    font-weight:500;
+    font-size: 1rem;
+    
+
+}
+footer div {
+    
+   padding: 2rem 2rem;
+    
+}
+footer div a {
+    display:block;
+    margin:1rem 0;
+    font-size:12px;
+    text-decoration:none ;
+    color: black;
+}
+footer div a:hover{
+    text-decoration: un;
+}
+
+@media screen and (max-width: 700PX){
+
+    footer {
+        flex-direction: column;
+        height: auto;
+        padding: 2rem;
+    }
+    footer div {
+        width: 100%;
+        padding:0 ;
+        margin: 1rem 0;
+    }
+    footer:first-child{
+        
+        margin-top: 0;
+    }
+    footer:last-child{
+        
+        margin-bottom: 0;
+    }
+    footer h3 {
+        margin: 0;
+    }
+}
